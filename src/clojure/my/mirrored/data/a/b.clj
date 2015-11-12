@@ -1,4 +1,4 @@
-(ns my.mirrored.data.joke.svalko
+(ns my.mirrored.data.a.b
   (:require [neko.log :as log]
             [clojure.core.async :as async :refer [<! >! <!! timeout chan alt! go go-loop close!]]))
 
