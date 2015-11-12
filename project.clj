@@ -12,7 +12,8 @@
   :plugins [[lein-droid "0.4.3"]]
 
   :dependencies [[org.clojure-android/clojure "1.7.0-r2"]
-                 [neko/neko "4.0.0-alpha5"]]
+                 [neko/neko "4.0.0-alpha5"]
+                 [org.clojure/core.async "0.2.371"]]
   :profiles {:default [:dev]
 
              :dev
@@ -46,4 +47,6 @@
             :aot-exclude-ns ["clojure.parallel" "clojure.core.reducers"
                              "cider.nrepl" "cider-nrepl.plugin"
                              "cider.nrepl.middleware.util.java.parser"
+                             "cljs.core.async.macros"
+                             "cljs.core.async.impl.ioc-macros"
                              #"cljs-tooling\..+"]})
